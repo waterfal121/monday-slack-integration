@@ -1,0 +1,22 @@
+{
+  "name": "slack-to-monday",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon monday-sync-value.mjs",
+    "dev:slack": "nodemon slack-sync-update.mjs",
+    "start": "node monday-sync-value.mjs"
+  },
+  "keywords": [],
+  "author": "Jeff Lai",
+  "license": "ISC",
+  "description": "Integrate Slack messages and Monday.com updates bidirectionally via Webhooks and APIs.",
+  "dependencies": {
+    "@slack/events-api": "^3.0.1",
+    "@slack/web-api": "^7.8.0",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.10"
+  }
+}
